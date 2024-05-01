@@ -1,0 +1,17 @@
+nav{
+    margin-left: 114px;
+  }
+  
+  nav li{
+    list-style: none;
+    display: inline-block;
+    margin-top: -200px;
+    margin-left: 32px;
+    color: #272626c4;
+    font-size: 17px;
+  }
+  .active{
+    color: black;
+    font-weight: 700;
+    border-bottom: 2px solid blue;
+  }
