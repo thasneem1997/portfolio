@@ -2,10 +2,14 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
-  background-color: #fffcfc;
+ background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   height: auto;
   width: 100%;
 
+}
+*{
+  color: white;
+  
 }
 
 img {
@@ -20,15 +24,11 @@ header{
 nav{
   margin-left: 114px;
 }
-
-nav li{
-  list-style: none;
-  display: inline-block;
-  margin-top: -200px;
-  margin-left: 32px;
-  color: #272626c4;
-  font-size: 17px;
+.menu-icon{
+display: none;
 }
+
+
 .active{
   color: black;
   font-weight: 700;
@@ -37,12 +37,13 @@ nav li{
 .slider{
   display:flex;
   justify-content: space-around;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
 }
 .slider-content{
-  margin: 80px 101px;
+  margin: 119px 101px;
 }
 .slider-content h1{
-  font-size: 64px;
+  font-size: 59px;
   margin-top: -25px;
   color: #185e85;
 }
@@ -56,9 +57,9 @@ nav li{
 }
 .btn{
  
-  border: 1px solid blue;
+ 
   display: inline-block;
-  padding: 14px;
+  padding: 15px 30px;
   border-radius: 3px;
   background: radial-gradient(circle at 48.7% 44.3%, rgb(30, 144, 231) 0%, rgb(56, 113, 209) 22.9%, rgb(38, 76, 140) 76.7%, rgb(31, 63, 116) 100.2%);
 
@@ -69,7 +70,7 @@ nav li{
   color: white;
 }
 .container{
-  background: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  color: white;
   height: auto;
   width: 100%;
 }
@@ -86,9 +87,9 @@ nav li{
 .about-content p{
   display: inline-block;
   width: 500px;
-  margin-top: -9px;
-  font-size: 18px;
-  color: #666666;
+  margin-top: 21px;
+  font-size: 16px;
+  color: #b9b4b4;
   font-weight: 300;
 
 }
@@ -135,14 +136,15 @@ nav li{
 .sub1{
     padding: 48px 17px 5px 21px;
     text-align: left;
-    background-color: lightblue; 
+    background: radial-gradient(circle at 48.7% 44.3%, rgb(30, 144, 231) 0%, rgb(56, 113, 209) 22.9%, rgb(38, 76, 140) 76.7%, rgb(31, 63, 116) 100.2%);
 }
 /* subject style end */
 .feature{
   display: flex;
   justify-content: space-around;
   margin: 20px 0px;
-  background-color: #185e85;
+  background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+  height: 116px;
   color: white;
   padding-top: 42px;
   padding-bottom: 0px
@@ -151,7 +153,16 @@ nav li{
   position: relative;
   top: -54px;
   left: -72px; 
+  font-size: 40px;
+    margin-top: -48px;
+    margin-left: 24px;
 
+  
+}
+.fea-image h1{
+  margin-left: -42px;
+  margin-top: 51px;
+  
 }
 /* feature section end */
 .test-grid {
@@ -204,7 +215,8 @@ nav li{
 /* footer style */
 
 footer{
-  background-color: #185e85;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+
   color: white;
   padding: 2px;
   margin-top: 100px;
@@ -225,7 +237,7 @@ textarea{
   width: 300px;
   border-radius: 5px;
   padding: 5px;
-  margin-left: 71px;
+  margin-left: 102px;
   margin-top: -24px;}
 
 label[for="message"] {
@@ -238,28 +250,35 @@ input[type="button"]{
   font-size: 17px;
   border-radius: 6px;
   color: #f3f3f4;
-  background-color: #128ac8;
+  background-color: #586368;
 }
 
   .contact{
-    
-      background: #ffffff5c;
-      border-radius: 10px;
-      padding-left: 26px;
-      width: 278px;
-      height: auto;
-      margin-top: 33px;
+    background: #ffffff5c;
+    border-radius: 10px;
+    padding-left: 26px;
+    width: 278px;
+    height: 134px;
+    margin-top: 65px;
   }
  td{
   padding: 10px;
  }
 /* footer style end */
-
+.icon-container{
+  margin-left: 95px;
+  cursor: pointer;
+}
 .icon-container a{
   color: black;
   width: 300px !important;
-  margin-left: 20px;
+ margin-left: -114px;
   margin-bottom: 60px;
+
+}
+nav li:hover{
+  color: #1e1adc;
+
 }
 
 
@@ -289,15 +308,19 @@ input[type="button"]{
   }
   .slider-content h1{
       font-size: 30px;}
+      .slider-content{
+        margin: 289px 18px;
+      }
+      
       
       .slider-content p{
           width: 100%;
 
       }
       .slider-img img{
-          width: 50%;
-  margin-top: -200px;
-  margin-left: 71px
+        width: 50%;
+        margin-top: -215px !important;
+        margin-left: 53px;
       }
      #about{
       display:flex;
@@ -309,6 +332,9 @@ input[type="button"]{
      .about-content p{
       width:100%;
      }
+     .subject {
+      margin-top: 19px;
+      height: auto;}
       .btn{
           display: block; /* Allows the button to be a block-level element */
           width:100px;
@@ -324,8 +350,9 @@ input[type="button"]{
           flex-direction: column;
           align-items: center;
           justify-content: space-around;
+          height: 670px;
          
-          flex-wrap: wrap;
+        
       }
       .test-head{
           margin: 0 auto;
@@ -364,6 +391,7 @@ input[type="button"]{
       .sub-head h1{
           display: inline-block;
           width:50%;
+          margin-left: 32px !important;
       }
 
       .footer-content{
@@ -380,6 +408,7 @@ input[type="button"]{
       }
       textarea{
           width: 100%;
+          margin-left: 30px !important;
           margin: 10px 0px;
       }
       input[type="button"]{
@@ -388,4 +417,12 @@ input[type="button"]{
       .container{
           margin-top: -179px;
       }
+      .menu-icon{
+        display: block;
+        margin-left: 204px;
+      }
+      .footer-btn{
+        margin-left: -4px !important;
+          }
+      
 }

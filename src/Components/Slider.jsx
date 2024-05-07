@@ -7,23 +7,30 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"; // Import the envelope icon
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function Slider() {
   return (
     <div className="container">
       <Navbar />
+      
       <div className="slider">
+      
         <div className="slider-content">
+          <div className="menu-icon">
+          <i className="fas fa-bars"></i>
+            </div>
+        
           <h6>Empower, Excel, Achieve, Succeed</h6>
           <h1>
-            <span style={{ color: "#1dd0f9" }}>Hi,I'm</span>
+            <span style={{ color: "#1dd0f9" }}>I'm Fathimath thasneem</span>
             <br />
-            Fathimath thasneem{" "}
+           Full stack developer
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-            <br /> dolores amet aperiam! Iusto odit cumque sint? Culpa
-            dignissimos,on?
+            React.js developer with a focus on building seamless user
+            experiences<br/> and a proven track record of delivering robust web
+            applications
           </p>
           <br />
 
@@ -32,28 +39,28 @@ function Slider() {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" />
+             >
+              <FontAwesomeIcon icon={faGithub} style={{width:'250px',marginLeft:'-96px'}} />
             </a>
             <a
               href="https://twitter.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
+              <FontAwesomeIcon icon={faTwitter} style={{width:'250px',marginLeft:'-96px'}}  />
             </a>
             <a
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <FontAwesomeIcon icon={faLinkedin} style={{width:'250px',marginLeft:'-96px'}}  />
             </a>
             <a href="mailto:your.email@example.com">
-              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+              <FontAwesomeIcon icon={faEnvelope} style={{width:'250px',marginLeft:'-96px'}}  />
             </a>
           </div>
-          <br/>
+          <br />  <br />
           <div className="btn">
             <a href="">Download Cv</a>
           </div>

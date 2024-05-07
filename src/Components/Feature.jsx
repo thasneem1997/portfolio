@@ -7,41 +7,41 @@ function Feature() {
     <div class="feature">
         <div class="item1">
             <div class="fea-content">
-                <h3>Online certification</h3>
+                <h3>Online <br/>certification</h3>
             </div>
             <div class="fea-image">
-                <i class="fa-solid fa-earth-americas fa-3x"></i>
+               <h1>2+</h1>
             </div>
         </div>
         <div class="item1">
 
             <div class="fea-content">
-                <h3>Top instructors</h3>
+                <h3 style={{marginLeft:'39px'}}>Projects <br/>Completed</h3>
             </div>
             <div class="fea-image">
-                <i class="fa-solid fa-chalkboard-user fa-3x" style={{marginLeft:'-15px'}}
+            <h1>60+</h1>
                
-            ></i>
+           
             </div>
 
         </div>
         <div class="item1">
 
             <div class="fea-content">
-                <h3>Unlimited courses</h3>
+                <h3>Year of experance</h3>
             </div>
             <div class="fea-image">
-                <i class="fa-solid fa-desktop fa-3x"></i>
+            <h1 style={{marginTop:'58px'}}>2+</h1>
             </div>
 
         </div>
         <div class="item1">
 
             <div class="fea-content">
-                <h3>Experianced members</h3>
+                <h3 style={{marginLeft:'32px'}}>Skills known</h3>
             </div>
             <div class="fea-image">
-                <i class="fa-solid fa-people-group fa-3x"></i>
+            <h1>10+</h1>
             </div>
 
         </div>

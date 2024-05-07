@@ -9,13 +9,15 @@ function Navbar() {
        <ul>
             <li class="active">Home</li>
             <li>About</li>
-            <li>Subject</li>
-            <li>Courses</li>
-            <li>Blog</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+           
             <li>Contact</li>
 
 
          </ul>
+         
+         
          </nav>
     </div>
   )

@@ -5,104 +5,92 @@ function Services() {
     <div>
       <section class="subject">
         
-        <div class="sub-head" style={{display:'inline-block'}}>
-          <h1 style={{ fontSize: "35px" }}>Popular subject</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            autem nam odit recusandae in fugit nisi reiciendis asperiores sit
-            maiores, deleniti quidem iu.
-          </p>
+        <div class="sub-head" style={{display:'inline-block',textAlign:'center',margin:'0 auto'}}>
+          <h1 style={{ fontSize: "35px",marginLeft:"549px",marginTop:'100px'}}>Services Providing</h1>
+         
         </div>
         <div class="sub">
           <div class="sub1">
             <div class="sub-img">
-              <i
+              {/* <i
                 class="fa-solid fa-palette fa-3x"
                 style={{ color: "#1557e7da" }}
-              ></i>
+              ></i> */}
             </div>
             <div class="sub-content">
-              <h6>ART</h6>
+              <h6>Web Application Development</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda hic recusandae architecto voluptates veritatis
-                delectus vero culpa nam.{" "}
+              Crafting modern, scalable web applications using the MERN stack, ensuring seamless performance across all devices.{" "}
               </p>
             </div>
           </div>
           <div class="sub1">
             <div class="sub-img">
-              <i
+              {/* <i
                 class="fa-solid fa-language fa-3x"
                 style={{ color: "#1557e7da" }}
-              ></i>
+              ></i> */}
             </div>
             <div class="sub-content">
-              <h6>Languages</h6>
+              <h6>Front-end and Back-end Solutions</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda hic recusandae architecto voluptates
+              Developing robust front-end interfaces with React.js and comprehensive back-end services using Node.js and Express.js.
               </p>
             </div>
           </div>
           <div class="sub1">
             <div class="sub-img">
-              <i
+              {/* <i
                 class="fa-solid fa-laptop-code fa-3x"
                 style={{ color: "#1557e7da" }}
-              ></i>
+              ></i> */}
             </div>
             <div class="sub-content">
-              <h6>Programing</h6>
+              <h6> Database Management</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda hic recusandae architecto voluptates veritatis
-                delectus vero culpa nam. Molestias soluta ipsa est nam{" "}
+             Implementing efficient, secure database solutions with MongoDB and MySQL to handle complex data needs.
               </p>
             </div>
           </div>
           <div class="sub1">
             <div class="sub-img">
-              <i
+              {/* <i
                 class="fa-solid fa-scale-balanced fa-3x"
                 style={{ color: "#1557e7da" }}
-              ></i>
+              ></i> */}
             </div>
             <div class="sub-content">
-              <h6>Law</h6>
+              <h6>SEO and Digital Marketing Support</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda hic recusandae architecto
+              Collaborating with marketing teams to optimize website architecture for search engines, enhancing visibility and engagement.
               </p>
             </div>
           </div>
           <div class="sub1">
             <div class="sub-img">
-              <i
+              {/* <i
                 class="fa-solid fa-vial-circle-check fa-3x"
                 style={{ color: "#1557e7da" }}
-              ></i>
+              ></i> */}
             </div>
             <div class="sub-content">
-              <h6>Chemistry</h6>
+              <h6>Project Lifecycle Management</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda hic recusandae architecto voluptates
+               From initial concept through deployment, offering support at every stage to ensure project success.
               </p>
             </div>
           </div>
           <div class="sub1">
             <div class="sub-img">
-              <i
+              {/* <i
                 class="fa-solid fa-user-tie fa-3x"
                 style={{ color: "#1557e7da" }}
-              ></i>
+              ></i> */}
             </div>
             <div class="sub-content">
-              <h6>Bussiness</h6>
+              <h6>Cross-cultural Project Coordination</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda hic recusandae architecto voluptates
+              Utilizing strong communication skills to manage and execute projects across geographical and cultural boundaries.
               </p>
             </div>
           </div>

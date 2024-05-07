@@ -7,11 +7,12 @@ nav{
     display: inline-block;
     margin-top: -200px;
     margin-left: 32px;
-    color: #272626c4;
+    color: rgb(255, 255, 255);
     font-size: 17px;
+    cursor: pointer;
   }
   .active{
-    color: black;
+    color: white;
     font-weight: 700;
     border-bottom: 2px solid blue;
   }
