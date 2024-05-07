@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 .App{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   margin: 0;
   padding:0;
   box-sizing: border-box;
@@ -10,6 +15,12 @@
 *{
   color: white;
   
+}
+.responsive-menu{
+  display: flex;
+  flex-direction: column;
+  display: none;
+
 }
 
 img {
@@ -57,7 +68,7 @@ display: none;
 }
 .btn{
  
- 
+ margin-top: 0px;
   display: inline-block;
   padding: 15px 30px;
   border-radius: 3px;
@@ -234,12 +245,13 @@ input[type="text"]{
   width:300px;
   background-color: #424242;
   border: none;
-
+  font-family: "Josefin Sans", sans-serif;
   border-radius: 5px;
  padding: 14px;
 
 }
 textarea{
+  font-family: "Josefin Sans", sans-serif;
   width: 300px;
   background-color: #424242;
   border-radius: 5px;
@@ -276,16 +288,22 @@ input[type="button"]{
   color:#ffffffdb;
  }
 /* footer style end */
-.icon-container{
-  margin-left: 95px;
+.icon-container {
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  padding: 0; 
+  display: flex; 
+  justify-content: space-between;
+  width: 200px; 
+  height: 45px;
   cursor: pointer;
 }
-.icon-container a{
-  color: black;
-  width: 300px !important;
- margin-left: -114px;
-  margin-bottom: 60px;
 
+.icon-container a {
+  color: white; 
+  width: 32px; 
+  margin: 0 10px; 
+  margin-bottom: 60px;
 }
 nav li:hover{
   color: #1e1adc;
@@ -307,6 +325,17 @@ nav li:hover{
   }
   p{
       width:50%;
+  }
+  .responsive-menu{
+    display: block;
+    margin-left: 191px;
+   margin-top: -80px;
+    padding-left: 77px;
+    padding-bottom: 114px;
+
+  }
+  .responsive-menu li{
+    margin-top: 10px;
   }
   img{
     max-width: 100%;
@@ -436,8 +465,10 @@ nav li:hover{
       }
       .menu-icon{
         display: block;
-        margin-left: 204px;
-      }
+        margin-left: 396px;
+        margin-top: -69PX;
+    }
+      
       .footer-btn{
         margin-left: -4px !important;
           }
