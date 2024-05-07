@@ -69,6 +69,9 @@ display: none;
   text-decoration: none;
   color: white;
 }
+.anchor{
+  text-decoration: none;
+}
 .container{
   color: white;
   height: auto;
@@ -108,8 +111,8 @@ display: none;
 
 /* about style end */
 
-/* subject style start */
-.subject{
+/* services style start */
+.services{
   height: auto;
 }
 .sub{
@@ -138,7 +141,7 @@ display: none;
     text-align: left;
     background: radial-gradient(circle at 48.7% 44.3%, rgb(30, 144, 231) 0%, rgb(56, 113, 209) 22.9%, rgb(38, 76, 140) 76.7%, rgb(31, 63, 116) 100.2%);
 }
-/* subject style end */
+/* services style end */
 .feature{
   display: flex;
   justify-content: space-around;
@@ -198,13 +201,13 @@ display: none;
   justify-content: space-between;
 }
 /* testimonial section end */
-.blog-grid{
+.portfolio-grid{
   display:grid;
   grid-template-columns: repeat(3,1fr);
   
   margin: 55px 137px;
 }
-.blog-img img{
+.portfolio-img img{
   width:300px ;
 }
 /* .date{
@@ -229,14 +232,19 @@ footer{
 }
 input[type="text"]{
   width:300px;
+  background-color: #424242;
+  border: none;
+
   border-radius: 5px;
- padding: 5px;
+ padding: 14px;
 
 }
 textarea{
   width: 300px;
+  background-color: #424242;
   border-radius: 5px;
-  padding: 5px;
+  border: none;
+  padding: 18px;
   margin-left: 102px;
   margin-top: -24px;}
 
@@ -250,11 +258,13 @@ input[type="button"]{
   font-size: 17px;
   border-radius: 6px;
   color: #f3f3f4;
-  background-color: #586368;
+    border-radius: 3px;
+    background: radial-gradient(circle at 48.7% 44.3%, rgb(30, 144, 231) 0%, rgb(56, 113, 209) 22.9%, rgb(38, 76, 140) 76.7%, rgb(31, 63, 116) 100.2%);
+
 }
 
   .contact{
-    background: #ffffff5c;
+    background: #424242;
     border-radius: 10px;
     padding-left: 26px;
     width: 278px;
@@ -263,6 +273,7 @@ input[type="button"]{
   }
  td{
   padding: 10px;
+  color:#ffffffdb;
  }
 /* footer style end */
 .icon-container{
@@ -279,6 +290,12 @@ input[type="button"]{
 nav li:hover{
   color: #1e1adc;
 
+}
+.footer-btn{
+  display: inline-block;
+    padding: 15px 30px;
+    border-radius: 3px;
+    background: radial-gradient(circle at 48.7% 44.3%, rgb(30, 144, 231) 0%, rgb(56, 113, 209) 22.9%, rgb(38, 76, 140) 76.7%, rgb(31, 63, 116) 100.2%);
 }
 
 
@@ -332,7 +349,7 @@ nav li:hover{
      .about-content p{
       width:100%;
      }
-     .subject {
+     .services {
       margin-top: 19px;
       height: auto;}
       .btn{
@@ -371,14 +388,14 @@ nav li:hover{
           justify-content: center;
           box-sizing: border-box;
       }
-      .subject .btn{
+      .services .btn{
           position: relative;
           margin-left: -825px;
           top: 213px;
           border-radius: 25px;
       }
      
-      .blog-grid{
+      .portfolio-grid{
           grid-template-columns: 1fr;
           justify-content: center;
           margin: 12px 40px;

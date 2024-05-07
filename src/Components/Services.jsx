@@ -3,7 +3,7 @@ import React from "react";
 function Services() {
   return (
     <div>
-      <section class="subject">
+      <section class="services" id="service">
         
         <div class="sub-head" style={{display:'inline-block',textAlign:'center',margin:'0 auto'}}>
           <h1 style={{ fontSize: "35px",marginLeft:"549px",marginTop:'100px'}}>Services Providing</h1>

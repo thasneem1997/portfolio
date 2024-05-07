@@ -2,19 +2,19 @@ import React from 'react'
 
 function Portfolio() {
   return (
-    <div className="blog">
+    <div className="portfolio" id="portfolio"> 
 
-    <div className="blog-heading" style={{margin:'0 auto',textAlign:'center'}}>
+    <div className="portfolio-heading" style={{margin:'0 auto',textAlign:'center'}}>
        <br/> <h6>latest projects</h6>
         <h1 style={{fontSize:'35px'}}>Portfolio</h1>
     </div>
-    <div className="blog-grid">
-        <div className="blog-item">
-            <div className="blog-img">
-                <img src="images/blog1.jpg"/>
+    <div className="portfolio-grid">
+        <div className="portfolio-item">
+            <div className="portfolio-img">
+                <img src="images/portfolio1.jpg"/>
 
             </div>
-            <div className="blog-content">
+            <div className="portfolio-content">
                 {/* <h1>Latest full course</h1> */}
                 {/* <div className="date">
                     <p>12 march 2023</p>
@@ -22,12 +22,12 @@ function Portfolio() {
                 </div> */}
             </div>
         </div>
-        <div className="blog-item">
-            <div className="blog-img">
-                <img src="images/blog2.jpg"/>
+        <div className="portfolio-item">
+            <div className="portfolio-img">
+                <img src="images/portfolio2.jpg"/>
 
             </div>
-            <div className="blog-content">
+            <div className="portfolio-content">
                 {/* <h1>Latest full course</h1> */}
                 {/* <div className="date">
                     <p>12 march 2023</p>
@@ -35,11 +35,11 @@ function Portfolio() {
                 </div> */}
             </div>
         </div>
-        <div className="blog-item">
-            <div className="blog-img">
-                <img src="images/blog3.jpg"/>
+        <div className="portfolio-item">
+            <div className="portfolio-img">
+                <img src="images/portfolio3.jpg"/>
             </div>
-            <div className="blog-content">
+            <div className="portfolio-content">
                 {/* <h1>Latest full course</h1> */}
                 {/* <div className="date">
                     <p>12 march 2023</p>

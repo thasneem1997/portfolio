@@ -3,7 +3,7 @@ import React from 'react'
 function Feature() {
   return (
     <div>
-      <section class="feature-section">
+      <section class="feature-section" id='feature'>
     <div class="feature">
         <div class="item1">
             <div class="fea-content">
