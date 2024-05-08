@@ -20,6 +20,7 @@ function Slider() {
   };
   const handleclose = () => {
     setopenmenu(false);
+    setmenu(true);
   };
   return (
     <div className="container">
