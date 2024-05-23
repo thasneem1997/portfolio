@@ -6,7 +6,7 @@ function Services() {
       <section class="services" id="service">
         
         <div class="sub-head" style={{display:'inline-block',textAlign:'center',margin:'0 auto'}}>
-          <h6>Ready to Serve You</h6>
+        
           <h1 style={{ fontSize: "35px",marginLeft:"549px",marginTop:'100px'}}>My Services</h1>
          
         </div>
