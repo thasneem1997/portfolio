@@ -28,7 +28,7 @@ function Feature() {
         <div class="item1">
 
             <div class="fea-content">
-                <h3>Year of experance</h3>
+                <h3>Years of Experience</h3>
             </div>
             <div class="fea-image">
             <h1 style={{marginTop:'58px'}}>2+</h1>
@@ -38,7 +38,7 @@ function Feature() {
         <div class="item1">
 
             <div class="fea-content">
-                <h3 style={{marginLeft:'32px'}}>Skills known</h3>
+                <h3 style={{marginLeft:'32px'}}>Skill Set</h3>
             </div>
             <div class="fea-image">
             <h1>10+</h1>
