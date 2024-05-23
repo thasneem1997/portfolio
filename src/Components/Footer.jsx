@@ -83,7 +83,7 @@ function Footer() {
                   <td>
                     <i className="fa-solid fa-phone"></i>
                   </td>
-                  <td>8136883613</td>
+                  <td>123546</td>
                 </tr>
               </tbody>
             </table>
