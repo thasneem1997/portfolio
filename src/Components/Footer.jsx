@@ -116,7 +116,7 @@ function Footer() {
               <br />
               <button
                 type="submit"
-                className="btn"
+                className="footer-btn"
                 value="Send message"
                 style={{ marginLeft: "108px", marginTop: "14px" }}
               >

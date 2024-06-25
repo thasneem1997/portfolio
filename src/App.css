@@ -533,10 +533,15 @@ label {
 .footer-btn {
   display: inline-block;
   padding: 15px 30px;
-  border-radius: 3px;
-  background: radial-gradient(circle at 48.7% 44.3%, rgb(30, 144, 231) 0%, rgb(56, 113, 209) 22.9%, rgb(38, 76, 140) 76.7%, rgb(31, 63, 116) 100.2%);
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #8a00e8 0%, #971c64 51%, #580669 100%);
 }
 
+.footer-btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #5b065b 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
 
 /* media query code */
 @media screen and (max-width: 768px) {
@@ -578,6 +583,10 @@ label {
   /* slider part */
   nav {
     display: none;
+  }
+
+  .typing {
+    font-size: 36px;
   }
 
   .slider {
@@ -632,8 +641,7 @@ label {
 
   .btn {
     display: block;
-    width: 167px;
-    margin-left: 28px !important;
+    width: 102px;
 
   }
 
@@ -697,7 +705,7 @@ label {
   .sub-head h1 {
     display: inline-block;
     width: 50%;
-    margin-left: 120px !important;
+    margin-left: 100px !important;
   }
 
   .footer-content {
