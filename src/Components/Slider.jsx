@@ -41,7 +41,7 @@ function Slider() {
                 <i
                   className="fas fa-bars"
                   onClick={handleclick}
-                  style={{ fontSize: "24px" }}
+                  style={{ fontSize: "20px", marginLeft: "13px" }}
                 ></i>
               </div>
             )}
