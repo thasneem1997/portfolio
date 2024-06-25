@@ -38,7 +38,11 @@ function Slider() {
           <div className="slider-content">
             {menu && (
               <div className="menu-icon">
-                <i className="fas fa-bars" onClick={handleclick}></i>
+                <i
+                  className="fas fa-bars"
+                  onClick={handleclick}
+                  style={{ fontSize: "24px" }}
+                ></i>
               </div>
             )}
             {openmenu && (
@@ -153,8 +157,8 @@ function Slider() {
               </a>
             </div>
             <div className="btn">
-            <a href="images/fathimath_2024.pdf">Download Cv</a>
-          </div>
+              <a href="images/fathimath_2024.pdf">Download Cv</a>
+            </div>
           </div>
           <div className="slider-img">
             <img src="images/photo.png" />

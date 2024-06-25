@@ -564,7 +564,7 @@ label {
   }
 
   .footer-hr {
-    width: 10px;
+    width: 220px;
   }
 
   .responsive-menu li {
@@ -586,7 +586,7 @@ label {
   }
 
   .typing {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 
   .slider {
@@ -722,12 +722,12 @@ label {
 
   input[type="text"] {
     width: 100%;
-    margin-left: -3px !important;
+    margin-left: -12px !important;
   }
 
   textarea {
     width: 100%;
-    margin-left: -3px !important;
+    margin-left: -12px !important;
     margin: 10px 0px;
 
   }
