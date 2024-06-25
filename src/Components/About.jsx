@@ -1,3 +1,4 @@
+import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 import React from "react";
 
 function About() {
@@ -5,24 +6,47 @@ function About() {
     <div>
       <section id="about">
         <div className="about-image">
-          <img src="images/about.jpg" />
+          <img src="images/about.gif" />
         </div>
         <div className="about-content">
-          <h6>Lets Talk about us</h6>
           <h1>About me</h1>
+          <h6>
+            {" "}
+            I am Fathimath Thasneem, a React.js<br></br> Developer based in
+            Bengaluru, India.
+          </h6>
           <p>
-            I am Fathimath Thasneem, a React.js Developer based in Bengaluru,
-            India. With a Master’s in Computer Science from the Institute of
-            Human Resources Development, I specialize in creating engaging,
-            responsive web applications that enhance user experiences. My
-            technical proficiency spans a broad range of tools and technologies
-            including React.js, Node.js, and MongoDB, with a keen focus on
-            full-stack development.
+            With a Master's in Computer Science from the Institute of Human
+            Resources Development, I specialize in creating engaging, responsive
+            web applications that enhance user experiences.
           </p>
-          <p>
-          My career is marked by a passion for learning and innovation, demonstrated through my proactive involvement in projects that span the development lifecycle and a commitment to staying abreast of the latest technological advances. I thrive in dynamic environments, leveraging my strong problem-solving skills and adaptability to drive projects to completion and achieve organizational goals.
-          </p>
-         
+          <div className="skill-set">
+            <div className="about-skill">
+              <h3>HTML & CSS</h3>
+              <hr style={{ width: "70%", marginLeft: "-1px" }}></hr>
+            </div>
+            <div className="about-skill">
+              <h3>React Js</h3>
+              <hr style={{ width: "50%", marginLeft: "1px" }}></hr>
+            </div>
+            <div className="about-skill">
+              <h3>Javascript</h3>
+              <hr style={{ width: "70%", marginLeft: "1px" }}></hr>
+            </div>
+            <div className="about-skill">
+              <h3>Next Js</h3>
+              <hr style={{ width: "30%", marginLeft: "1px" }}></hr>
+            </div>
+            <div className="about-skill">
+              <h3>Php</h3>
+              <hr style={{ width: "50%", marginLeft: "1px" }}></hr>
+            </div>
+          </div>
+          <br />
+
+          <div className="btn">
+            <a href="images/fathimath_2024.pdf">Download Cv</a>
+          </div>
         </div>
       </section>
       <br />

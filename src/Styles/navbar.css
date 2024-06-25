@@ -1,18 +1,109 @@
-nav{
-    margin-left: 50px;
+nav {
+  margin-left: 50px;
+
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider .pulse-border {
+  top: 300px;
+  animation: pulse-background-movement 6s infinite;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+
+
+}
+
+@keyframes pulse-background-movement {
+  0% {
+    background-size: 200% 200%;
+   
+    /* Larger size creates movement illusion */
   }
-  
-  nav li{
-    list-style: none;
-    display: inline-block;
-    margin-top: -200px;
-    margin-left: 32px;
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    cursor: pointer;
+  50% {
+    background-size: 100% 100%;
+    /* Larger size creates movement illusion */
   }
-  .active{
-    color: white;
-    font-weight: 700;
-    border-bottom: 2px solid blue;
+
+  100% {
+    background-size: 60% 60%;
+    /* Original size */
   }
+}
+
+
+.typing {
+  font-size: 42px;
+  color: #d546b3;
+
+  font-weight: 700;
+  font-family: "Fjalla One", sans-serif;
+
+}
+
+.typing-container {
+  margin-top: -25px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-top: -200px;
+  margin-left: 32px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+  font-weight: 700;
+  border-bottom: 2px solid rgb(230, 29, 207);
+}
+
+nav img {
+  width: 177px;
+  margin-top: 20px;
+  MARGIN-LEFT: 35PX;
+  HEIGHT: 113PX;
+}
+
+.nav-btn {
+  background-image: linear-gradient(to right, #8a00e8 0%, #971c64 51%, #8763a6 100%);
+  margin: 40px 185px;
+  padding: 18px 48px;
+  font-size: 18px;
+  text-align: center;
+
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+
+}
+
+.nav-btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #4a0334 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.nav-btn:focus {
+  box-shadow: #410124 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.nav-btn:active {
+  box-shadow: #550334 0 3px 7px inset;
+  transform: translateY(2px);
+
+}
+
+.menu {
+  margin-top: 65px;
+  margin-left: 3px;
+}

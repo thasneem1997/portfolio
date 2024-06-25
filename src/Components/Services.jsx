@@ -4,10 +4,15 @@ function Services() {
   return (
     <div>
       <section class="services" id="service">
-        
-        <div class="sub-head" style={{display:'inline-block',textAlign:'center',margin:'0 auto'}}>
-        
-          <h1 style={{ fontSize: "35px",marginLeft:"549px",marginTop:'100px'}}>My Services</h1>
+        <div
+          class="sub-head"
+          style={{
+            display: "inline-block",
+            textAlign: "center",
+            margin: "0 auto",
+          }}
+        >
+          <h1 className="heading">My Services</h1>
          
         </div>
         <div class="sub">
@@ -21,7 +26,8 @@ function Services() {
             <div class="sub-content">
               <h6>Web Application Development</h6>
               <p>
-              Crafting modern, scalable web applications using the MERN stack, ensuring seamless performance across all devices.{" "}
+                Crafting modern, scalable web applications using the MERN stack,
+                ensuring seamless performance across all devices.{" "}
               </p>
             </div>
           </div>
@@ -35,7 +41,8 @@ function Services() {
             <div class="sub-content">
               <h6>Front-end and Back-end Solutions</h6>
               <p>
-              Developing robust front-end interfaces with React.js and comprehensive back-end services using Node.js and Express.js.
+                Developing robust front-end interfaces with React.js and
+                comprehensive back-end services using Node.js and Express.js.
               </p>
             </div>
           </div>
@@ -49,7 +56,8 @@ function Services() {
             <div class="sub-content">
               <h6> Database Management</h6>
               <p>
-             Implementing efficient, secure database solutions with MongoDB and MySQL to handle complex data needs.
+                Implementing efficient, secure database solutions with MongoDB
+                and MySQL to handle complex data needs.
               </p>
             </div>
           </div>
@@ -63,7 +71,9 @@ function Services() {
             <div class="sub-content">
               <h6>SEO and Digital Marketing Support</h6>
               <p>
-              Collaborating with marketing teams to optimize website architecture for search engines, enhancing visibility and engagement.
+                Collaborating with marketing teams to optimize website
+                architecture for search engines, enhancing visibility and
+                engagement.
               </p>
             </div>
           </div>
@@ -77,7 +87,8 @@ function Services() {
             <div class="sub-content">
               <h6>Project Lifecycle Management</h6>
               <p>
-               From initial concept through deployment, offering support at every stage to ensure project success.
+                From initial concept through deployment, offering support at
+                every stage to ensure project success.
               </p>
             </div>
           </div>
@@ -91,7 +102,8 @@ function Services() {
             <div class="sub-content">
               <h6>Cross-cultural Project Coordination</h6>
               <p>
-              Utilizing strong communication skills to manage and execute projects across geographical and cultural boundaries.
+                Utilizing strong communication skills to manage and execute
+                projects across geographical and cultural boundaries.
               </p>
             </div>
           </div>

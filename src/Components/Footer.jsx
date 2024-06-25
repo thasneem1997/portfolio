@@ -14,7 +14,7 @@ function Footer() {
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
@@ -30,38 +30,22 @@ function Footer() {
   return (
     <div>
       <footer>
-        <div  id="footer" className="footer-head" style={{ textAlign: "center" }}>
+        <div
+          id="footer"
+          className="footer-head"
+          style={{ textAlign: "center" }}
+        >
           <h1 style={{ marginTop: "51px", fontSize: "40px" }}>Get in Touch</h1>
         </div>
 
         <div className="footer-content">
-          <div className="form">
-            <h3>Enter your details</h3>
-            <form onSubmit={onSubmit}>
-              <label htmlFor="name">Your name</label>
-              <input type="text" name="name" id="name" style={{ marginLeft: "30px" }}placeholder="Enter your email" required/>
-              <br />
-              <br />
-              <label htmlFor="email">Your email</label>
-              <input type="text" name="email" id="email" style={{ marginLeft: "28px" }} placeholder="Enter Your Email" required/>
-              <br />
-              <br />
-            
-              <label htmlFor="message" >Message</label>
-              <textarea
-                id="message"
-                cols="40"
-                rows="4"
-                style={{ marginLeft: "97px" }} placeholder="Enter Your Message" 
-                name="message"  required></textarea>
-              <br />
-              <button type="submit"  className="footer-btn" value="Send message"style={{ marginLeft: "101px" }}>Send Message</button>
-            </form>
-            <span>{result}</span>
-          </div>
-
           <div className="contact">
-          
+            <h1>Lets talk</h1>
+            <p style={{ width: "386px" }}>
+              I am actively seeking new opportunities and am available for
+              immediate joining. Connect with me or call me . Let's discuss how
+              I can contribute to your team
+            </p>
             <table>
               <tbody>
                 <tr>
@@ -75,25 +59,78 @@ function Footer() {
                 <tr>
                   <td>
                     {" "}
-                    <i className="fas fa-map-marker-alt"></i>{" "}
+                    <i
+                      className="fas fa-map-marker-alt"
+                      style={{ fontSize: "20px" }}
+                    ></i>{" "}
                   </td>
                   <td>Bangalore karnataka</td>
                 </tr>
                 <tr>
                   <td>
-                    <i className="fa-solid fa-phone"></i>
+                    <i
+                      className="fa-solid fa-phone"
+                      style={{ fontSize: "20px" }}
+                    ></i>
                   </td>
                   <td>123546</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <div className="form">
+            <form onSubmit={onSubmit}>
+              <label htmlFor="name">Your name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                style={{ marginLeft: "30px" }}
+                placeholder="Enter your email"
+                required
+              />
+              <br />
+              <br />
+              <label htmlFor="email">Your email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                style={{ marginLeft: "28px" }}
+                placeholder="Enter Your Email"
+                required
+              />
+              <br />
+              <br />
+
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                cols="40"
+                rows="4"
+                style={{ marginLeft: "97px" }}
+                placeholder="Enter Your Message"
+                name="message"
+                required
+              ></textarea>
+              <br />
+              <button
+                type="submit"
+                className="btn"
+                value="Send message"
+                style={{ marginLeft: "108px", marginTop: "14px" }}
+              >
+                Send Message
+              </button>
+            </form>
+            <span>{result}</span>
+          </div>
         </div>
 
-        <hr />
+        <hr className="footer-hr" />
 
         <div style={{ textAlign: "center" }}>
-          <h5>copyright@ 2024. All rights reserved</h5>
+          <p className="copy">copyright© 2024. All rights reserved</p>
         </div>
       </footer>
     </div>
