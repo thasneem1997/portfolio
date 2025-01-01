@@ -3,15 +3,21 @@ import Navbar from "../Components/Navbar";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { TypeAnimation } from "react-type-animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   faGithub,
   faTwitter,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons"; // Import the envelope icon
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 function Slider() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const imageUrl = "images/bg.png";
   const [menu, setmenu] = useState(true);
   const [openmenu, setopenmenu] = useState(false);
@@ -25,7 +31,7 @@ function Slider() {
     setmenu(true);
   };
   return (
-    <div className="container">
+    <div>
       <Navbar setactivemenu={setactivemenu} activemenu={activemenu} />
 
       <div className="slider">
@@ -46,53 +52,59 @@ function Slider() {
               </div>
             )}
             {openmenu && (
-              <ul className="responsive-menu">
+              <ul className="responsive-menu list-unstyled ">
                 <i
                   className="fa fa-times"
                   aria-hidden="true"
-                  style={{ marginLeft: "60px" }}
+                  style={{ marginLeft: "157px" }}
                   onClick={handleclose}
                 ></i>
 
                 <li
                   onClick={() => setactivemenu("Home")}
-                  className={activemenu == "Home" ? "active" : ""}
+                  className={activemenu == "Home" ? "underline" : ""}
                 >
                   {" "}
-                  <AnchorLink href="#home" className="anchor">
+                  <AnchorLink href="#home" className="anchor text-light ms-3">
                     Home
                   </AnchorLink>
                 </li>
                 <li
                   onClick={() => setactivemenu("About")}
-                  className={activemenu == "About" ? "active" : ""}
+                  className={activemenu == "About" ? "underline" : ""}
                 >
-                  <AnchorLink href="#about" className="anchor">
+                  <AnchorLink href="#about" className="anchor text-light ms-3">
                     About
                   </AnchorLink>
                 </li>
                 <li
                   onClick={() => setactivemenu("Services")}
-                  className={activemenu == "Services" ? "active" : ""}
+                  className={activemenu == "Services" ? "underline" : ""}
                 >
-                  <AnchorLink href="#service" className="anchor">
+                  <AnchorLink
+                    href="#service"
+                    className="anchor text-light ms-3"
+                  >
                     Services
                   </AnchorLink>
                 </li>
                 <li
                   onClick={() => setactivemenu("Portfolio")}
-                  className={activemenu == "Portfolio" ? "active" : ""}
+                  className={activemenu == "Portfolio" ? "underline" : ""}
                 >
-                  <AnchorLink href="#portfolio" className="anchor">
+                  <AnchorLink
+                    href="#portfolio"
+                    className="anchor text-light ms-3"
+                  >
                     Portfolio
                   </AnchorLink>
                 </li>
 
                 <li
                   onClick={() => setactivemenu("Contact")}
-                  className={activemenu == "Contact" ? "active" : ""}
+                  className={activemenu == "Contact" ? "underline" : ""}
                 >
-                  <AnchorLink href="#footer" className="anchor">
+                  <AnchorLink href="#footer" className="anchor text-light ms-3">
                     Contact
                   </AnchorLink>
                 </li>
@@ -104,7 +116,7 @@ function Slider() {
             Self-Motivated Learner.
           </h6> */}
             <br />
-            <div>
+            <div className="slidercontent" data-aos="fade-up">
               <h1>
                 <span> Fathimath thasneem</span>
               </h1>
@@ -120,14 +132,14 @@ function Slider() {
                   wrapper="span"
                 />
               </div>
+              <p>
+                React.js developer with a focus on building seamless user
+                experiences
+                <br /> and a proven track record of delivering robust web
+                applications
+              </p>
             </div>
 
-            <p>
-              React.js developer with a focus on building seamless user
-              experiences
-              <br /> and a proven track record of delivering robust web
-              applications
-            </p>
             <br />
 
             <div className="icon-container">
@@ -156,11 +168,16 @@ function Slider() {
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </div>
-            <div className="btn">
-              <a href="images/fathimath_2024.pdf">Download Cv</a>
+            <div className="btnstyle">
+              <a
+                href="images/fathimath_2024.pdf"
+                className="text-decoration-none text-light"
+              >
+                Download Cv
+              </a>
             </div>
           </div>
-          <div className="slider-img">
+          <div className="slider-img" data-aos="fade-up">
             <img src="images/photo.png" />
           </div>
         </div>

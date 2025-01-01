@@ -2,14 +2,21 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"; // Import the envelope icon
 import "@fortawesome/fontawesome-free/css/all.css";
+import { useForm } from "react-hook-form";
 
 function Footer() {
   const [result, setResult] = React.useState("");
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
+  const onSubmit = async (data) => {
+    setResult("Sending....");
+
+    const formData = new FormData();
+    Object.keys(data).forEach((key) => formData.append(key, data[key]));
     formData.append("access_key", "6e6cc732-3c88-48e5-990e-c86dccd94ac8");
 
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -17,14 +24,12 @@ function Footer() {
       body: formData,
     });
 
-    const data = await response.json();
+    const result = await response.json();
 
-    if (data.success) {
+    if (result.success) {
       setResult("Form Submitted Successfully");
-      event.target.reset();
     } else {
-      console.log("Error", data);
-      setResult(data.message);
+      setResult(result.message);
     }
   };
   return (
@@ -64,7 +69,7 @@ function Footer() {
                       style={{ fontSize: "20px" }}
                     ></i>{" "}
                   </td>
-                  <td>Bangalore karnataka</td>
+                  <td>Dubai UAE</td>
                 </tr>
                 <tr>
                   <td>
@@ -73,33 +78,43 @@ function Footer() {
                       style={{ fontSize: "20px" }}
                     ></i>
                   </td>
-                  <td>123546</td>
+                  <td>+971545705074</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div className="form">
-            <form onSubmit={onSubmit}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <label htmlFor="name">Your name</label>
               <input
                 type="text"
-                name="name"
+                {...register("name", { required: "name is required" })}
                 id="name"
                 style={{ marginLeft: "30px" }}
                 placeholder="Enter your email"
-                required
               />
+              {errors.name && (
+                <p style={{ color: "red" }}>{errors.name.message}</p>
+              )}
               <br />
               <br />
               <label htmlFor="email">Your email</label>
               <input
                 type="text"
-                name="email"
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: {
+                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                    message: "Invalid email format",
+                  },
+                })}
                 id="email"
                 style={{ marginLeft: "28px" }}
                 placeholder="Enter Your Email"
-                required
               />
+              {errors.email && (
+                <p style={{ color: "red" }}>{errors.email.message}</p>
+              )}
               <br />
               <br />
 
@@ -110,20 +125,22 @@ function Footer() {
                 rows="4"
                 style={{ marginLeft: "97px" }}
                 placeholder="Enter Your Message"
-                name="message"
+                {...register("message")}
                 required
               ></textarea>
               <br />
               <button
                 type="submit"
-                className="footer-btn"
+                className="footer-btn "
                 value="Send message"
                 style={{ marginLeft: "108px", marginTop: "14px" }}
               >
                 Send Message
               </button>
             </form>
-            <span>{result}</span>
+            <br />
+            <br />
+            <h3 style={{ marginLeft: "100px" }}>{result}</h3>
           </div>
         </div>
 

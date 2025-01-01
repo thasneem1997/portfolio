@@ -7,31 +7,39 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  ;
 }
 
-.slider .pulse-border {
+.slider {
   top: 300px;
-  animation: pulse-background-movement 6s infinite;
+
   background-position: 0px 0px;
   background-repeat: no-repeat;
 
 
 }
 
+.pulse-border {
+  animation: pulse-background-movement 9s infinite;
+}
+
 @keyframes pulse-background-movement {
   0% {
-    background-size: 200% 200%;
-   
-    /* Larger size creates movement illusion */
+    background-size: 70% 70%;
+
   }
+
   50% {
-    background-size: 100% 100%;
-    /* Larger size creates movement illusion */
+    background-size: 75% 75%;
+  }
+
+  75% {
+    background-size: 80% 80%;
   }
 
   100% {
-    background-size: 60% 60%;
-    /* Original size */
+    background-size: 70% 70%;
   }
 }
 

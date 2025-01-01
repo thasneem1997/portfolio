@@ -1,48 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Feature() {
+ 
+
   return (
     <div>
-      <section class="feature-section" id="feature">
-        <div class="feature">
-          <div class="item1">
-            <div class="fea-content">
+      <section className="feature-section" id="feature">
+        <div className="feature">
+          <div className="item1">
+            <div className="fea-content">
               <h3>
                 Online <br />
                 certification
               </h3>
             </div>
-            <div class="fea-image">
-              <h1>2+</h1>
+            <div className="fea-image">
+              <h1 style={{ fontSize: "55px" }}>4+</h1>
             </div>
           </div>
-          <div class="item1">
-            <div class="fea-content">
+          <div className="item1">
+            <div className="fea-content">
               <h3>
                 Projects <br />
                 Completed
               </h3>
             </div>
-            <div class="fea-image">
-              <h1>60+</h1>
+            <div className="fea-image">
+              <h1 style={{ fontSize: "55px" }}>60+</h1>
             </div>
           </div>
-          <div class="item1">
-            <div class="fea-content">
+          <div className="item1">
+            <div className="fea-content">
               <h3>
                 Years of<br></br> Experience
               </h3>
             </div>
-            <div class="fea-image">
-              <h1>2+</h1>
+            <div className="fea-image">
+              <h1 style={{ fontSize: "55px" }}>2+</h1>
             </div>
           </div>
-          <div class="item1">
-            <div class="fea-content">
+          <div className="item1">
+            <div className="fea-content">
               <h3>Skill Set</h3>
             </div>
-            <div class="fea-image">
-              <h1>10+</h1>
+            <div className="fea-image">
+              <h1 style={{ fontSize: "55px" }}>10+</h1>
             </div>
           </div>
         </div>

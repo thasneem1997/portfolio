@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import navbar from "../Styles/navbar.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Navbar({ setactivemenu, activemenu }) {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <nav>
-        <div className="nav-container">
-          <img src="images/logo.png"></img>
+        <div className="nav-container" data-aos="fade-right">
+          <img src="images/logo.png" className="logo"></img>
 
           <ul className="menu">
             <li
               onClick={() => setactivemenu("Home")}
               className={activemenu === "Home" ? "active" : ""} // Using strict equality (===)
             >
-              <AnchorLink href="#home" className="anchor">
+              <AnchorLink href="#home" className="anchor text-light">
                 Home
               </AnchorLink>
             </li>
@@ -22,7 +27,7 @@ function Navbar({ setactivemenu, activemenu }) {
               onClick={() => setactivemenu("About")}
               className={activemenu == "About" ? "active" : ""}
             >
-              <AnchorLink href="#about" className="anchor">
+              <AnchorLink href="#about" className="anchor text-light">
                 About
               </AnchorLink>
             </li>
@@ -30,7 +35,7 @@ function Navbar({ setactivemenu, activemenu }) {
               onClick={() => setactivemenu("Services")}
               className={activemenu == "Services" ? "active" : ""}
             >
-              <AnchorLink href="#service" className="anchor">
+              <AnchorLink href="#service" className="anchor text-light">
                 Services
               </AnchorLink>
             </li>
@@ -38,7 +43,7 @@ function Navbar({ setactivemenu, activemenu }) {
               onClick={() => setactivemenu("Portfolio")}
               className={activemenu == "Portfolio" ? "active" : ""}
             >
-              <AnchorLink href="#portfolio" className="anchor">
+              <AnchorLink href="#portfolio" className="anchor text-light">
                 Portfolio
               </AnchorLink>
             </li>
@@ -47,13 +52,16 @@ function Navbar({ setactivemenu, activemenu }) {
               onClick={() => setactivemenu("Contact")}
               className={activemenu == "Contact" ? "active" : ""}
             >
-              <AnchorLink href="#footer" className="anchor">
+              <AnchorLink href="#footer" className="anchor text-light">
                 Contact
               </AnchorLink>
             </li>
           </ul>
           <div className="nav-btn">
-            <a href="https://www.linkedin.com/in/fathimath-thasneem-vv-326392257/">
+            <a
+              href="https://www.linkedin.com/in/fathimath-thasneem-vv-326392257/"
+              className="text-light"
+            >
               Connect with me
             </a>
           </div>
