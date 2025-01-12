@@ -212,6 +212,93 @@ function Portfolio() {
                   </Card.Body>
                 </Card>
               </div>
+              <div className="portfolio-item">
+                <Card style={{ width: "20rem", backgroundColor: "black" }}>
+                  <Card.Img variant="top" src="images/portfolio7.png" />
+                  <Card.Body>
+                    <Card.Title className="text-light">Crypo price</Card.Title>
+                    <Card.Text>
+                      Crypto Price is a React JS web app that tracks real-time
+                      cryptocurrency prices using the CoinGecko API, featuring
+                      price charts and a search bar for exploring individual
+                      currencies.
+                      <div className="d-flex gap-2 mt-2">
+                        <Badge bg="secondary bg-opacity-25 text-light p-2 rounded-pill">
+                          React
+                        </Badge>
+                        <Badge bg="secondary bg-opacity-25 text-light p-2 rounded-pill">
+                          Tailwind Css
+                        </Badge>
+                        <Badge bg="secondary bg-opacity-25 text-light p-2 rounded-pill">
+                          {" "}
+                          Coinceko api
+                        </Badge>
+                      </div>
+                    </Card.Text>
+                    <div className="d-flex flex-row gap-8">
+                      <Button
+                        style={{ backgroundColor: "#f61ff3" }}
+                        className="border-0"
+                      >
+                        <a href="https://crypto-price-bice.vercel.app/">
+                          View project
+                        </a>
+                      </Button>
+                      <Button className="ms-3 text-bg-dark border-0">
+                        <FaGithub />
+                        <a
+                          href="https://github.com/thasneem1997/crypto_price"
+                          target="blank"
+                          className="ms-1 mt-2"
+                        >
+                          Git Hub
+                        </a>
+                      </Button>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </div>
+              <div className="portfolio-item">
+                <Card style={{ width: "20rem", backgroundColor: "black" }}>
+                  <Card.Img variant="top" src="images/portfolio4.png" />
+                  <Card.Body>
+                    <Card.Title className="text-light">Mentor bee</Card.Title>
+                    <Card.Text>
+                      Mentor Bee is an office project developed using HTML, CSS,
+                      and JavaScript. It is an institutional website designed to
+                      meet the needs of educational organizations.
+                      <div className="d-flex gap-2 mt-2">
+                        <Badge bg="secondary bg-opacity-25 text-light p-2 rounded-pill">
+                          Html
+                        </Badge>
+                        <Badge bg="secondary bg-opacity-25 text-light p-2 rounded-pill">
+                          Css
+                        </Badge>
+                        <Badge bg="secondary bg-opacity-25 text-light p-2 rounded-pill">
+                          {" "}
+                          Javascript
+                        </Badge>
+                      </div>
+                    </Card.Text>
+                    <div className="d-flex flex-row gap-8">
+                      <Button
+                        style={{ backgroundColor: "#f61ff3" }}
+                        className="border-0"
+                      >
+                        <a href="https://mentorbeeeduverse.com/">
+                          View project
+                        </a>
+                      </Button>
+                      <Button className="ms-3 text-bg-dark border-0">
+                        <FaGithub />
+                        <a href="#" target="blank" className="ms-1 mt-2">
+                          Git Hub
+                        </a>
+                      </Button>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </div>
             </div>
           </div>
         </Carousel.Item>
